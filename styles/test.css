@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 2500px;
+}
+
+
+
+.topnav {
+    overflow: hidden;
+    display: flex;
+    position: sticky;
+    overflow: hidden;
+    background-color: #333;
+    direction: rtl;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+  .hide {
+      display: none;
+  }
+
+  .main {
+      width: 100%;
+      height: 600px;
+
+
+
+
+      background: rgb(33, 37, 41);
+      background: linear-gradient(0deg, rgba(33, 37, 41, 1) 2%, rgba(0, 156, 247, 0.085) 100%), url("../matt-popovich-7mqsZsE6FaU-unsplash.jpg");
+
+      background-size: cover;
+      /* background-color: #2d4191;
+     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.659) 32%, rgba(6, 86, 172, 0) 69%, rgba(0, 0, 0, 1) 100%),
+      url("pexels-mike-gonzález-15904374.jpg");
+    background-size: cover; */
+
+      color: white;
+      display: flex;
+
+  }
+  .space{
+    width: 100%;
+    height: 200px;
+
+  }
+  .nav a{
+
+    font-size: 20px;
+    text-decoration:dashed;
+    
+  }
+ 
+  .nav{
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius:0px 0px 65px 0px ;
+  }
+  .imgicon{
+   
+   
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 50%;
+    
+    background-color: #00000021;
+  }
+  h4{
+    margin-top: 30px;
+    text-align: end;
+  }
+
+  .typewriter h1 {
+      color: #fff;
+      font-family: fantasy;
+      overflow: hidden;
+      width: 100%;
+      /* Ensures the content is not revealed until the animation */
+      border-right: .15em solid rgb(255, 255, 255);
+      /* The typwriter cursor */
+      white-space: nowrap;
+      /* Keeps the content on a single line */
+      /* margin: 0 auto; */
+      /* Gives that scrolling effect as the typing happens */
+      letter-spacing: .15em;
+      /* Adjust as needed */
+      animation:
+          typing 3.5s steps(30, end),
+          blink-caret .5s step-end 8;
+      border-right: .15em solid rgb(255, 255, 255, 0);
+
+
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+      from {
+          width: 0
+      }
+
+      to {
+          width: 100%
+      }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+
+      from,
+      to {
+          border-color: transparent
+      }
+
+      50% {
+          border-color: rgb(255, 255, 255)
+      }
+  }
+
+  h1 {
+      font-size: 70px;
+      margin-top: 20%;
+      margin-bottom: 100px;
+        
+  }
+
+
+  /* .top{
+   margin-top:25%; 
+}
+.end{
+   margin-top:5%; 
+} */
+
+.topnav a:hover {
+    background-color: #545454;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #000b2e;
+    color: white;
+}
+
+.container {
+    margin-top: 0px;
+    /* height: 500px; */
+}
+
+
+.dis1{
+    /* background-color: #002e0a; */
+    width: 100%;
+    height: 260px;
+    margin-top: 50px;
+    font-size: 30px;
+    
+}
+.ccc{
+   
+    margin-top: 60px;
+    /* height: 400px; */
+   
+}
+
+
+
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    /* display: grid; */
+    grid-auto-flow: column;
+    place-content: center;
+    background: #ffffff;
+}
+.contact{
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+    background-color: #0018682d;
+    border-radius: 550px 550px 0px 0px;
+    box-shadow: #0018682d 50px 1px 
+    , #0018682d 100px 1px
+    ,#0018682d 170px 1px
+    ,#0018682d 270px 1px,
+    
+        #0018682d -50px 1px,
+        #0018682d -100px 1px,
+        #0018682d -170px 1px,
+        #0018682d -270px 1px;
+  
+    /* border: 1px rgb(255, 255, 255) solid; */
+}
+.header{
+    margin-top: 30px
+}
+.post{
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 64, 104, 0);
+    margin-top: 100px;
+   
+   
+}
+.postitem{
+    border: 1px solid white;
+    margin: 20px;
+    background-color: #00242e;
+    border-radius: 0px 20px 20px 20px;
+
+}
+p{
+   
+    margin-left: 20px;
+}
+h5{
+    text-align: end;
+}
+li{
+    list-style-type: none;
+}
+.word{
+    font-size: 22px;
+    text-align: end;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.det{
+    text-align: end;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.smary{
+    font-size: 15px;
+    text-align: end;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer{
+    text-align: end;
+    background-color: #00242e;
+    height: 250px;
+}

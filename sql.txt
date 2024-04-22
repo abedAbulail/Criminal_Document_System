@@ -1,0 +1,58 @@
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `number_s` int(15) NOT NULL,
+  `user_pass` varchar(20) COLLATE latin1_swedish_ci NOT NULL,
+  `role_s` varchar(20) COLLATE latin1_swedish_ci NOT NULL,
+  `phonenumber` bigint(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+# you must add an Admin////
+
+INSERT INTO `user` (`number_s`, `user_pass`, `role_s`, `phonenumber`) 
+VALUES (20202222, 'admin', 'admin', 1234567890);
+
+
+CREATE TABLE `post` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `post_date` text COLLATE latin1_swedish_ci NOT NULL,
+  `post_time` text COLLATE latin1_swedish_ci NOT NULL,
+  `post_text` varchar(1255) COLLATE latin1_swedish_ci NOT NULL,
+  `imagee` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+
+
+CREATE TABLE `criminal` (
+  `namec` varchar(30) COLLATE latin1_swedish_ci NOT NULL,
+  `age` int(5) NOT NULL,
+  `hair_color` varchar(20) COLLATE latin1_swedish_ci NOT NULL,
+  `eye_color` varchar(20) COLLATE latin1_swedish_ci NOT NULL,
+  `height` int(11) NOT NULL,
+  `xaddress` varchar(50) COLLATE latin1_swedish_ci NOT NULL,
+  `Identification_number` varchar(50) COLLATE latin1_swedish_ci NOT NULL,
+  `cases` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `clevel` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `img` text COLLATE latin1_swedish_ci NOT NULL,
+  PRIMARY KEY (`Identification_number`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+
+
+
+
+CREATE TABLE `car` (
+  `car_number` varchar(11) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `type_of_car` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `color` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `model` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Violated` varchar(1050) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `awner` varchar(50) COLLATE latin1_swedish_ci DEFAULT NULL,
+  PRIMARY KEY (`car_number`),
+  CONSTRAINT `fk_awner_criminal` FOREIGN KEY (`awner`) REFERENCES `criminal` (`Identification_number`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+
+
